@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SentinelX Inc. - Ana Sayfa</title>
+  <style>
+    /* Reset & Temel ayarlar */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Fira Code', monospace, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #d0d7de;
+      background-color: #0f111a;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0f111a 0%, #1a1f2a 100%);
+      line-height: 1.6;
+      padding: 0 15px;
+    }
+
+    /* Header ve navigasyon */
+    header {
+      border-bottom: 2px solid #3a6ff3;
+      padding: 25px 0 20px;
+      margin-bottom: 40px;
+    }
+
+    nav .nav-list {
+      display: flex;
+      justify-content: center;
+      gap: 35px;
+      list-style: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    nav .nav-list li a {
+      text-decoration: none;
+      color: #9bb0f7;
+      padding: 8px 15px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      box-shadow: inset 0 0 0 0 #3a6ff3;
+    }
+
+    nav .nav-list li a:hover,
+    nav .nav-list li a.active {
+      color: #fff;
+      box-shadow: inset 0 -3px 0 0 #3a6ff3;
+      background-color: rgba(58, 111, 243, 0.15);
+    }
+
+    /* Header Başlık ve slogan */
+    .header-content {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .header-content h1 {
+      font-size: 3.8rem;
+      font-weight: 900;
+      letter-spacing: 6px;
+      color: #3a6ff3;
+      text-shadow: 0 0 8px #3a6ff3bb;
+      margin-bottom: 8px;
+      font-family: 'Fira Code', monospace;
+    }
+
+    .header-content .slogan {
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: #7a8db9;
+      font-style: italic;
+      letter-spacing: 1.2px;
+    }
+
+    /* Ana içerik */
+    main {
+      max-width: 900px;
+      margin: 0 auto 50px;
+      background: #1f2233;
+      padding: 35px 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 25px rgba(58, 111, 243, 0.3);
+    }
+
+    main section p {
+      margin-bottom: 22px;
+      font-size: 1.15rem;
+      color: #c4c9dc;
+      font-family: 'Fira Code', monospace;
+      line-height: 1.5;
+    }
+
+    /* Footer */
+    footer {
+      background: #15182a;
+      padding: 20px 0;
+      text-align: center;
+      color: #5c678a;
+      font-size: 0.9rem;
+      border-top: 2px solid #3a6ff3;
+      font-family: 'Fira Code', monospace;
+    }
+
+    footer a {
+      color: #72aaff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      nav .nav-list {
+        flex-direction: column;
+        gap: 18px;
+      }
+      main {
+        padding: 25px 20px;
+      }
+      .header-content h1 {
+        font-size: 2.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <nav>
+    <ul class="nav-list">
+      <li><a href="index.html" class="active">Ana Sayfa</a></li>
+      <li><a href="wiki.html">Wiki / Teknik Dokümantasyon</a></li>
+      <li><a href="news.html">Haberler & Güncellemeler</a></li>
+      <li><a href="contact.html">İletişim</a></li>
+    </ul>
+  </nav>
+  <div class="header-content">
+    <h1>SentinelX Inc.</h1>
+    <p class="slogan">Anonim Ofisimizin Resmi Web Sitesine Hoşgeldiniz</p>
+  </div>
+</header>
+
+<main>
+  <section>
+    <p>SentinelX Inc., genç ve dinamik bir ekip tarafından oluşturulan anonim bir yazılım ofisidir. Ekip üyelerimiz arasında <strong>Sentinel, PhantoMOSTF, MODer, Craft7, EI8HT</strong> ve <strong>PurPl3</strong> bulunmaktadır. Uzmanlık alanlarımız; başta Counter Strike serisi ve Minecraft olmak üzere, oyunlara yönelik yazılım geliştirme, teknik analiz ve inovatif çözümler sunmaktır.</p>
+    <p>Web sitemizde, projelerimizle ilgili detaylı teknik dokümantasyon, güncel haberler ve duyurular, ayrıca resmi iletişim kanallarımız yer almaktadır. Amacımız, hem oyun tutkunlarına hem de yazılım camiasına fayda sağlayacak kapsamlı ve güvenilir içerikler sunmaktır.</p>
+    <p>Yakında sunacağımız yeni oyun projeleri ve güncellemeler için takipte kalınız. Minecraft serverımız ile ilgili detaylı bilgiler de çok yakında sizlerle paylaşılacaktır.</p>
+    <p>Bu platform, teknik bilgi alışverişi ve yenilikçi yazılım çalışmalarının merkezi olmaya adaydır. SentinelX Inc. ailesi olarak, profesyonellikten ödün vermeden, en iyi hizmeti sunmak için çalışıyoruz.</p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 SentinelX Inc. Tüm hakları saklıdır.</p>
+</footer>
+</body>
+</html>
